@@ -2,10 +2,8 @@
 
 # Remove the local manifests directory if it exists (cleanup before repo initialization)
 rm -rf .repo/local_manifests/
-
 # Initialize the ROM manifest from the RisingTechOSS repository
 repo init -u https://github.com/RisingTechOSS/android -b fifteen --git-lfs
-
 # Synchronize the repo using a custom resync script
 /opt/crave/resync.sh
 rm -rf packages/apps/ViPER4AndroidFX
