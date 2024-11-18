@@ -7,6 +7,7 @@ git clone https://github.com/xiaomi-begonia-dev/android_packages_apps_ViPER4Andr
 rm -rf vendor/bcr
 git clone https://github.com/Chaitanyakm/vendor_bcr.git --depth 1 -b main vendor/bcr
 . build/envsetup.sh
+export OUT_DIR=out1
 export BUILD_USERNAME=dpenra
 export BUILD_HOSTNAME=crave
 export TARGET_DEFAULT_PIXEL_LAUNCHER=true
