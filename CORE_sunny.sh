@@ -8,7 +8,6 @@ repo init -u https://github.com/RisingTechOSS/android -b fifteen --git-lfs
 
 # Synchronize the repo using a custom resync script
 /opt/crave/resync.sh
-
 rm -rf packages/apps/ViPER4AndroidFX
 git clone https://github.com/xiaomi-begonia-dev/android_packages_apps_ViPER4AndroidFX.git --depth 1 -b fourteen packages/apps/ViPER4AndroidFX
 rm -rf vendor/bcr
