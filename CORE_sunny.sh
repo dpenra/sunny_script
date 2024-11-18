@@ -1,6 +1,14 @@
 #!/bin/bash
-repo init -u https://github.com/RisingTechOSS/android -b fifteen --git-lfs
+
+# Remove the local manifests directory if it exists (cleanup before repo initialization)
+rm -rf .repo/local_manifests/
+
+# Initialize the ROM manifest from the RisingTechOSS repository
+repo init -u https://github.com/RisingTechOSS/android -b fourteen --git-lfs
+
+# Synchronize the repo using a custom resync script
 /opt/crave/resync.sh
+
 rm -rf packages/apps/ViPER4AndroidFX
 git clone https://github.com/xiaomi-begonia-dev/android_packages_apps_ViPER4AndroidFX.git --depth 1 -b fourteen packages/apps/ViPER4AndroidFX
 rm -rf vendor/bcr
@@ -27,3 +35,6 @@ export PRODUCT_PACKAGES+=(
 )
 riseup sunny user
 rise b
+
+
+
