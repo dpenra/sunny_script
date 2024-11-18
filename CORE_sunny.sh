@@ -12,7 +12,7 @@ repo init -u https://github.com/RisingTechOSS/android -b fifteen --git-lfs
 # --force-sync: Ensure a full sync of all repositories
 # -j$(nproc --all): Use all available CPU cores
 # repo sync -c --no-clone-bundle --optimized-fetch --prune --force-sync -j$(nproc --all)
-# /opt/crave/resync.sh
+/opt/crave/resync.sh
 
 rm -rf packages/apps/ViPER4AndroidFX
 git clone https://github.com/xiaomi-begonia-dev/android_packages_apps_ViPER4AndroidFX.git --depth 1 -b fourteen packages/apps/ViPER4AndroidFX
