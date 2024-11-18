@@ -11,7 +11,7 @@ repo init -u https://github.com/RisingTechOSS/android -b fifteen --git-lfs
 # --prune: Remove obsolete branches
 # --force-sync: Ensure a full sync of all repositories
 # -j$(nproc --all): Use all available CPU cores
-repo sync -c --no-clone-bundle --optimized-fetch --prune --force-sync -j$(nproc --all)
+# repo sync -c --no-clone-bundle --optimized-fetch --prune --force-sync -j$(nproc --all)
 # /opt/crave/resync.sh
 
 rm -rf packages/apps/ViPER4AndroidFX
