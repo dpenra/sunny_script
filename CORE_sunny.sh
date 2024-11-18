@@ -4,7 +4,7 @@
 rm -rf .repo/local_manifests/
 
 # Initialize the ROM manifest from the RisingTechOSS repository
-repo init -u https://github.com/RisingTechOSS/android -b fourteen --git-lfs
+repo init -u https://github.com/RisingTechOSS/android -b fifteen --git-lfs
 
 # Synchronize the repo using a custom resync script
 /opt/crave/resync.sh
