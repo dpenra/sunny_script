@@ -57,23 +57,6 @@ git clone https://github.com/dpenra/android_packages_apps_Updater.git --depth 1 
 # Build output directory
 export BUILD_USERNAME=dpenra
 export BUILD_HOSTNAME=crave
-export TARGET_DEFAULT_PIXEL_LAUNCHER=true
-export TARGET_ENABLE_PIXEL_FEATURES=true
-export TARGET_PREBUILT_LAWNCHAIR_LAUNCHER=true
-export TARGET_CORE_GMS=true
-# export TARGET_DISABLE_EPPE=true
-# Enable Google Mobile Services (GMS)
-export WITH_GMS=true
-# Add Google-specific packages to the build
-export PRODUCT_PACKAGES+=(
-    MarkupGoogle
-    LatinIMEGooglePrebuilt
-    AiWallpapers
-    WallpaperEmojiPrebuilt
-    PrebuiltDeskClockGoogle
-    CalculatorGooglePrebuilt
-    CalendarGooglePrebuilt
-)
 riseup sunny user
 # Start the build process
 rise b
