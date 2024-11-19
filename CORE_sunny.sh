@@ -3,8 +3,6 @@
 # initiate
 repo init -u https://github.com/RisingTechOSS/android -b fifteen --git-lfs
 
-rm -rf packages/apps/Updater
-
 #sync
 /opt/crave/resync.sh
 
@@ -13,7 +11,7 @@ rm -rf device/xiaomi/sunny
 rm -rf device/qcom/common
 rm -rf device/qcom/qssi
 rm -rf device/xiaomi/sunny-kernel
-# rm -rf vendor/xiaomi/sunny
+rm -rf vendor/xiaomi/sunny
 rm -rf vendor/qcom/common
 rm -rf vendor/qcom/opensource/core-utils
 rm -rf packages/apps/DisplayFeatures
@@ -24,7 +22,7 @@ rm -rf prebuilts/gcc/linux-x86/aarch64/aarch64-elf
 rm -rf prebuilts/gcc/linux-x86/arm/arm-eabi
 rm -rf vendor/lineage
 rm -rf packages/apps/Updater
-# rm -rf vendor/lineage-priv/keys
+rm -rf vendor/lineage-priv/keys
 
 # Clone the necessary device repositories
 git clone https://github.com/dpenra/device_xiaomi_sunny.git --depth 1 -b lineage-22 device/xiaomi/sunny
