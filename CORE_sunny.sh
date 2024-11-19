@@ -3,6 +3,8 @@
 # initiate
 repo init -u https://github.com/RisingTechOSS/android -b fifteen --git-lfs
 
+rm -rf packages/apps/Updater
+
 #sync
 /opt/crave/resync.sh
 
