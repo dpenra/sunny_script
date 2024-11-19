@@ -21,6 +21,7 @@ rm -rf hardware/qcom-caf/sm8150/media
 rm -rf prebuilts/gcc/linux-x86/aarch64/aarch64-elf
 rm -rf prebuilts/gcc/linux-x86/arm/arm-eabi
 rm -rf vendor/lineage
+rm -rf vendor/lineage-priv/keys
 
 # Clone the necessary device repositories
 git clone https://github.com/dpenra/device_xiaomi_sunny.git --depth 1 -b lineage-22 device/xiaomi/sunny
