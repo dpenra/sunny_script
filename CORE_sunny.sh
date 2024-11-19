@@ -21,6 +21,7 @@ rm -rf hardware/qcom-caf/sm8150/media
 rm -rf prebuilts/gcc/linux-x86/aarch64/aarch64-elf
 rm -rf prebuilts/gcc/linux-x86/arm/arm-eabi
 rm -rf vendor/lineage
+rm -rf packages/apps/Updater
 rm -rf vendor/lineage-priv/keys
 
 # Clone the necessary device repositories
@@ -48,6 +49,7 @@ git clone https://github.com/StatiXOS/android_prebuilts_gcc_linux-x86_arm_arm-ea
 
 #source mods
 git clone https://github.com/dpenra/android_vendor_lineage.git --depth 1 -b fifteen vendor/lineage
+git clone https://github.com/dpenra/android_packages_apps_Updater.git --depth 1 -b fifteen packages/apps/Updater
 
 . build/envsetup.sh
 # Build output directory
